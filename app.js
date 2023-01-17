@@ -12,12 +12,13 @@ class ProductManager {
     this.products.push({title,description,price,thumbnail,code,stock,id:ProductManager.id})
 }
 
+//creo el metodo para verificar que productos existen en mi array
 getProducts() {
     return this.products
 }
 
 
-
+//agrego metodo para verificar si existe el producto por su id
 getProductById(id) {
     let product = this.products.find(product => product.id === id);
     if (!product) {
