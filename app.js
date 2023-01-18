@@ -10,6 +10,13 @@ class ProductManager {
   addProduct(title, description, price, thumbnail, code, stock) {
     ProductManager.id++
     this.products.push({title,description,price,thumbnail,code,stock,id:ProductManager.id})
+
+    //confirmo que todos los campos esten ocupados
+    if (!title || !description || !price || !thumbnail || !code || !stock) {
+        console.error('todos los campos son necesarios');
+    }
+
+  
 }
 
 //creo el metodo para verificar que productos existen en mi array
