@@ -1,1 +1,0 @@
-[{"title":"Producto 1 actualizado","description":"Descripción actualizada","price":12.99,"thumbnail":"http://ejemplo.com/imagen1-actualizada.jpg","code":"P001","stock":150,"id":1}]
