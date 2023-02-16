@@ -1,0 +1,27 @@
+{{!formulario}}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Real Time Products</title>
+</head>
+<body>
+    <h1>Real Time Products</h1>
+    <ul id="productList">
+        {{#each products}}
+            <li>
+                {{this.title}} - ${{this.price}} - Ruta img: {{this.thumbnail}} - Code: {{this.code}} - Stock: {{this.stock}}  <button class="deleteBtn" data-id="{{this.id}}">Delete</button>
+            </li>
+        {{/each}}
+    </ul>
+
+    <form id="productForm">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="text" id="code" placeholder="code" required>
+        <input type="number" id="stock" placeholder="stock" required>
+
+
+        <button type="submit">Add Product</button>
+    </form>
